@@ -7,6 +7,10 @@ import { Helmet } from 'react-helmet';
 import Games from './components/Games';
 import Matador from './components/Matador';
 
+// TODO: Scroll to top on page change.
+
+// TODO: When going on a 404 route, it goes to the Matador page.
+
 const App = () => (
   <>
     <Helmet>
