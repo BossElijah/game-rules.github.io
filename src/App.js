@@ -1,11 +1,11 @@
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
-import Bang from './components/Bang';
-import Dart from './components/Dart';
-import Ludo from './components/Ludo';
-import './styles/styles.scss';
 import { Helmet } from 'react-helmet';
 import Games from './components/Games';
-import Matador from './components/Matador';
+import Bang from './components/games/Bang';
+import Dart from './components/games/Dart';
+import Ludo from './components/games/Ludo';
+import Matador from './components/games/Matador';
+import './styles/styles.scss';
 
 // TODO: Scroll to top on page change.
 

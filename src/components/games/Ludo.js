@@ -8,11 +8,6 @@ const Ludo = () => (
     <h1>Ludo</h1>
     <img src="/img/ludo/ludo.png" alt="" />
     <p>
-      Ludo is a very simple game which can be played by 2 - 4 players. It is
-      easy to play and understand, which makes it popular among children. This
-      game has some rules and regulations that you need to know.
-    </p>
-    <p>
       Ludo is a very simple game which can be played by 2 – 4 players. It is
       easy to play and understand, which makes it popular among children. This
       game has some rules and regulations that you need to know.
