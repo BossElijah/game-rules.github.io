@@ -6,13 +6,14 @@ import Dart from './components/games/Dart';
 import Ludo from './components/games/Ludo';
 import Matador from './components/games/Matador';
 import './styles/styles.scss';
+import ScrollToTop from './components/ScrollToTop';
 
-// TODO: Scroll to top on page change.
+// TODO: Change teaser hover effects.
 
-// TODO: When going on a 404 route, it goes to the Matador page.
+// TODO: Customize 404 page.
 
 const App = () => (
-  <>
+  <ScrollToTop>
     <Helmet>
       <title>Game Rules</title>
     </Helmet>
@@ -44,10 +45,14 @@ const App = () => (
         <Route exact path="/dart" element={<Dart />} />
         <Route exact path="/ludo" element={<Ludo />} />
         <Route exact path="/matador" element={<Matador />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route
+          exact
+          path="/page-not-found"
+          element={<h1>Page Not Found</h1>} />
+        <Route path="*" element={<Navigate to="/page-not-found" />} />
       </Routes>
     </div>
-  </>
+  </ScrollToTop>
 );
 
 export default App;
